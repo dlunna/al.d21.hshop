@@ -1,0 +1,92 @@
+{% load static %}
+
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+  <title>Alamandra | {% block titulo %} {% endblock %}</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbar-bottom/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'core/vendor/twbs/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <style type="text/css">
+    h4 {
+      font-family: Verdana, Arial, Helvetica, Sans-serif;
+      font-size: 250%;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #4b82cc;
+      margin-bottom: 0px;
+      text-align: left;
+    }
+  </style>
+
+  <style>
+    body {
+      {% with "123456789"|random as image %}
+      {% get_static_prefix as STATIC_PREFIX %}
+      //background-image: url('{% static 'core/slider/{{image}}.jpg' %}');
+      //background-image: url('{% static 'core/slider/1.jpg' %}');
+      background-image: url('{{ STATIC_PREFIX }}core/slider/{{image}}.jpg');
+      {% endwith %}
+      background-size: cover;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h4>Alamandra</h4>
+  <hr>
+  <br>
+
+  {% block contenido %}{% endblock %}
+
+  <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="{% url 'home' %}">Alamandra</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://alamandra-me.blogspot.com">Blog</a>
+        </li>
+
+        <!--
+        <li class="nav-item">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li>
+        -->
+
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+        </li>
+
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="{% static 'core/vendor/components/jquery/jquery.slim.min.js' %}"></script>
+
+  <!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>-->
+  <script src="../../assets/js/vendor/popper.min.js"></script>
+  <script src="{% static 'core/vendor/twbs/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>
