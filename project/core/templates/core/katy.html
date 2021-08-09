@@ -39,19 +39,10 @@
                             <li class="scroll-to-section"><a href="#about">Acerca de</a></li>
                            	
                         
-                            <li class="scroll-to-section"><a href="#menu">Menu</a></li>
-                            <li class="scroll-to-section"><a href="#chefs">Chefs</a></li> 
-                            <li class="submenu">
-                                <a href="javascript:;">Features</a>
-                                <ul>
-                                    <li><a href="#">Features Page 1</a></li>
-                                    <li><a href="#">Features Page 2</a></li>
-                                    <li><a href="#">Features Page 3</a></li>
-                                    <li><a href="#">Features Page 4</a></li>
-                                </ul>
-                            </li>
+                            <li class="scroll-to-section"><a href="#menu">Productos</a></li>
+                            <li class="scroll-to-section"><a href="#chefs">Puntos de venta</a></li>
                             <!-- <li class=""><a rel="sponsored" href="https://templatemo.com" target="_blank">External URL</a></li> -->
-                            <li class="scroll-to-section"><a href="#reservation">Contact Us</a></li> 
+                            <li class="scroll-to-section"><a href="#reservation">Pedidos</a></li>
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -150,13 +141,13 @@
                         {% block contenido %}{% endblock %}</p>
                         <div class="row">
                             <div class="col-4">
-                                <img src="{% static 'core/assets/images/about-thumb-01.jpg' %}" alt="">
+                                <img src="{% static 'core/images/about-thumb-01.png' %}" alt="Photo by freestocks on Unsplash">
                             </div>
                             <div class="col-4">
-                                <img src="{% static 'core/assets/images/about-thumb-02.jpg' %}" alt="">
+                                <img src="{% static 'core/images/about-thumb-02.png' %}" alt="Photo by Julian Florez on Unsplash">
                             </div>
                             <div class="col-4">
-                                <img src="{% static 'core/assets/images/about-thumb-03.jpg' %}" alt="">
+                                <img src="{% static 'core/images/about-thumb-03.png' %}" alt="Photo by Ryan 'O' Niel on Unsplash">
                             </div>
                         </div>
                     </div>
@@ -177,98 +168,94 @@
     </section>
     <!-- ***** About Area Ends ***** -->
 
+
+
+
+
+
+
     <!-- ***** Menu Area Starts ***** -->
     <section class="section" id="menu">
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="section-heading">
+
                         <h6>Productos</h6>
-                        <h2>Catalogo de productos junio 2021</h2>
+                        <h2>Catalogo de productos</h2>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="menu-item-carousel">
-            <div class="col-lg-12">
-                <div class="owl-menu-item owl-carousel">
-                    <div class="item">
-                        <div class='card card1'>
-                            <div class="price"><h6>$14</h6></div>
-                            <div class='info'>
-                              <h1 class='title'>Chocolate Cake</h1>
-                              <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
-                              <div class="main-text-button">
-                                  <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                              </div>
+
+
+        <!-- otro carrusel -->
+
+        <!-- otro carrusel fin -->
+
+
+
+        <!-- carousel card START -->
+
+<div class="container">
+
+    <div class="row">
+
+
+            <div class="col-12">
+
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="bálsamo labial" src="{% static 'core/images/producto-01.png' %}">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Bálsamo labial humectante</h4>
+                                            <p class="card-text">Con manteca de cacao, karité y vitamina E</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="sérum anti-edad" src="{% static 'core/images/producto-02.png' %}">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Sérum anti-edad Fórmula con GOTU KOLA y ÁCIDO HIALURÓNICO</h4>
+                                            <p class="card-text">Gotas herbales fáciales, sus ingredientes son conocidos por sus propiedades hidratantes, lubricantes y suavizantes que actúan sobre las líneas profundas de expresión.
+</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="shampoo" src="{% static 'core/images/producto-03.png' %}">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Shampoo Yeguada la Reserva</h4>
+                                            <p class="card-text">Detiene caída, estimula crecimiento, regenera tu cuerpo cabelludo, elimina caspa, sebo, grasa, resequedad, producto libre de parabenos y sulfatos</p>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class='card card2'>
-                            <div class="price"><h6>$22</h6></div>
-                            <div class='info'>
-                              <h1 class='title'>Klassy Pancake</h1>
-                              <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
-                              <div class="main-text-button">
-                                  <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class='card card3'>
-                            <div class="price"><h6>$18</h6></div>
-                            <div class='info'>
-                              <h1 class='title'>Tall Klassy Bread</h1>
-                              <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
-                              <div class="main-text-button">
-                                  <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class='card card4'>
-                            <div class="price"><h6>$10</h6></div>
-                            <div class='info'>
-                              <h1 class='title'>Blueberry CheeseCake</h1>
-                              <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
-                              <div class="main-text-button">
-                                  <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class='card card5'>
-                            <div class="price"><h6>$8.50</h6></div>
-                            <div class='info'>
-                              <h1 class='title'>Klassy Cup Cake</h1>
-                              <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
-                              <div class="main-text-button">
-                                  <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class='card card3'>
-                            <div class="price"><h6>$7.25</h6></div>
-                            <div class='info'>
-                              <h1 class='title'>Klassic Cake</h1>
-                              <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
-                              <div class="main-text-button">
-                                  <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+
             </div>
-        </div>
+
+    </div>
+</div>
+
+        <!-- carousel card ENDs -->
+
+
+
+
     </section>
     <!-- ***** Menu Area Ends ***** -->
+
+
+
 
     <!-- ***** Chefs Area Starts ***** -->
     <section class="section" id="chefs">
@@ -277,7 +264,7 @@
                 <div class="col-lg-4 offset-lg-4 text-center">
                     <div class="section-heading">
                         <h6>Puntos de venta</h6>
-                        <h2>We offer the best ingredients for you</h2>
+                        <h2>Ven visita nuestros puntos de distribución </h2>
                     </div>
                 </div>
             </div>
@@ -287,15 +274,18 @@
                         <div class="thumb">
                             <div class="overlay"></div>
                             <ul class="social-icons">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/EcopipoDulceMami"><i class="fa fa-facebook"></i></a></li>
+                                <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>-->
                             </ul>
-                            <img src="{% static 'core/assets/images/chefs-01.jpg' %}" alt="Chef #1">
+                            <img src="{% static 'core/images/store-01.png' %}" alt="Dulce Mami">
                         </div>
                         <div class="down-content">
-                            <h4>Randy Walker</h4>
-                            <span>Pastry Chef</span>
+                            <h4>Dulce Mami</h4>
+                            <span>Plaza el Dorado, Col. Centro Pachuca Hidalgo.<br>
+                            771 354 5746, horario de 10:00 a 18:00 horas</span>
+
+
                         </div>
                     </div>
                 </div>
@@ -308,11 +298,12 @@
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-behance"></i></a></li>
                             </ul>
-                            <img src="{% static 'core/assets/images/chefs-02.jpg' %}" alt="Chef #2">
+                            <img src="{% static 'core/images/store-02.png' %}" alt="Coffe Park">
                         </div>
                         <div class="down-content">
-                            <h4>David Martin</h4>
-                            <span>Cookie Chef</span>
+                            <h4>Coffe Park</h4>
+                            <span>Quita Bonita, Mineral de la Reforma Hidalgo<br>
+                                Horario 9 a 22 horas</span>
                         </div>
                     </div>
                 </div>
@@ -325,11 +316,11 @@
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-google"></i></a></li>
                             </ul>
-                            <img src="{% static 'core/assets/images/chefs-03.jpg' %}" alt="Chef #3">
+                            <img src="{% static 'core/images/store-03.png' %}" alt="Próximamente">
                         </div>
                         <div class="down-content">
-                            <h4>Peter Perkson</h4>
-                            <span>Pancake Chef</span>
+                            <h4>Próximamente</h4>
+                            <span>=)</span>
                         </div>
                     </div>
                 </div>
@@ -340,14 +331,18 @@
 
 
 
-    <!-- ***** Menu Area Starts ***** -->
+
+
+
+    <!-- ***** Precios productos Start ***** -->
+    <!--
     <section class="section" id="offers">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 offset-lg-4 text-center">
                     <div class="section-heading">
                         <h6>Recomendación del mes ...</h6>
-                        <h2>This Week’s Special Meal Offers</h2>
+                        <h2>Promociones disponibles para el mes de Agosto</h2>
                     </div>
                 </div>
             </div>
@@ -604,7 +599,12 @@
             </div>
         </div>
     </section>
-    <!-- ***** Chefs Area Ends ***** --> 
+    -->
+    <!-- ***** Precios productos Ends ***** -->
+
+
+
+
 
 
 
@@ -624,7 +624,9 @@
                                 <div class="phone">
                                     <i class="fa fa-phone"></i>
                                     <h4>Whatsapp</h4>
-                                    <span>7711234567<br><a href="#">7711234567</a></span>
+                                    <span>
+                                        <a href="https://api.whatsapp.com/send?phone=527712797580&text=Hola%20bienvenido%20a%20HannaShop">7712794580</a>
+                                    </span>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -668,7 +670,9 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="logo">
-                        <a href="index.html"><img src="{% static 'core/assets/images/white-logo.png' %}" alt=""></a>
+                        <!--<a href="index.html"><img src="{% static 'core/assets/images/white-logo.png' %}" alt=""></a>-->
+                        <a href="index.html"><img src="{% static 'core/images/hshop_brand.jpg' %}" align="Hanna Shop MX"></a>
+
                     </div>
                 </div>
                 <div class="col-lg-4 col-xs-12">
